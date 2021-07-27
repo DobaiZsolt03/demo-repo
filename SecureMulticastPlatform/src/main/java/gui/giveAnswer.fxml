@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.giveAnswerController">
+   <children>
+      <VBox style="-fx-background-color: #FDCB9B;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="106.0" prefWidth="748.0" style="-fx-background-color: #43302e;">
+               <children>
+                  <Label alignment="CENTER" text="Provide an answer" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hiddenValue" text="Label" visible="false" />
+               </children>
+            </VBox>
+            <TextField fx:id="subjectField" editable="false" maxWidth="-Infinity" prefHeight="37.0" prefWidth="614.0" style="-fx-background-radius: 7;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextArea fx:id="questionField" editable="false" prefHeight="418.0" prefWidth="820.0" style="-fx-background-radius: 7;" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextArea>
+            <TextArea fx:id="yourAnswerField" prefHeight="418.0" prefWidth="820.0" promptText="Your answer..." style="-fx-background-radius: 7;" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextArea>
+            <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="giveAnswerButton" mnemonicParsing="false" onAction="#giveAnswerButtonClicked" stylesheets="@Components.css" text="Give Answer" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="informationLabel" textFill="#e40f0f">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

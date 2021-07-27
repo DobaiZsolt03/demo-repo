@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="450.0" style="-fx-background-color: #43302e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.inviteNewMembersController">
+   <children>
+      <TextField fx:id="inviteUserField" maxWidth="-Infinity" prefHeight="37.0" prefWidth="377.0" promptText="Enter a user..." style="-fx-background-radius: 7;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="inviteButton" mnemonicParsing="false" onAction="#inviteButtonClicked" prefHeight="51.0" prefWidth="125.0" stylesheets="@Components.css" text="Invite" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="51.0" prefWidth="130.0" stylesheets="@Components.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="125.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="informationLabel">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+         <textFill>
+            <LinearGradient endX="0.15048543689320393" endY="0.9223300970873787">
+               <stops>
+                  <Stop color="#233329" />
+                  <Stop color="#63d471" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</VBox>

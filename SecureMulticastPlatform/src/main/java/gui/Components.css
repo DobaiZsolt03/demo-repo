@@ -1,0 +1,11 @@
+.button {
+-fx-background-radius: 7px;
+-fx-background-color: linear-gradient(#FFBF00,#D3212D);
+}
+
+.label{
+-fx-background-radius: 5px;
+-fx-background-color: linear-gradient(#FFBF00,#D3212D);
+}
+
+

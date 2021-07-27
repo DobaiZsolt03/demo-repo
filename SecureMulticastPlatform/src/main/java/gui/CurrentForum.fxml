@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="780.0" prefWidth="1467.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CurrentForumController">
+   <left>
+      <VBox prefHeight="727.0" prefWidth="290.0" style="-fx-background-color: #43302e;" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="189.0" prefViewportHeight="128.0" prefViewportWidth="239.0" prefWidth="290.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox fx:id="membersVBOX" alignment="CENTER_LEFT" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Label alignment="CENTER" text="Members" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="60.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="addNewMemberButton" mnemonicParsing="false" onAction="#addNewMemberButtonClicked" stylesheets="@Components.css" text="Add New Member +" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="546.0" prefViewportHeight="550.0" prefViewportWidth="235.0" prefWidth="290.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox fx:id="forumMembersListVBOX" prefHeight="542.0" prefWidth="239.0" style="-fx-background-color: #43302e;" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="213.0" prefViewportHeight="550.0" prefViewportWidth="235.0" prefWidth="290.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox fx:id="pendingUsersVBOX" alignment="TOP_CENTER" prefHeight="542.0" prefWidth="239.0" style="-fx-background-color: #43302e;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="889.0" prefWidth="1177.0" style="-fx-background-color: #FDCB9B;" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="100.0" prefViewportHeight="73.0" prefViewportWidth="987.0" prefWidth="1177.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox alignment="CENTER" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Label fx:id="forumTitleLabel" alignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="635.0" prefViewportHeight="595.0" prefViewportWidth="985.0" prefWidth="1177.0" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="middleVBOX" prefHeight="581.0" prefWidth="1175.0" style="-fx-background-color: #FDCB9B;" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="79.0" prefViewportHeight="44.0" prefViewportWidth="987.0" prefWidth="1177.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <HBox alignment="CENTER" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Button fx:id="postAQuestionButton" mnemonicParsing="false" onAction="#postAQuestionButtonClicked" stylesheets="@Components.css" text="Post A New Question" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#goBackButtonClicked" stylesheets="@Components.css" text="Go Back" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" style="-fx-background-color: #43302e;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

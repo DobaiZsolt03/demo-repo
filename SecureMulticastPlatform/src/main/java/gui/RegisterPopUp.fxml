@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PopUpController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="256.0" prefWidth="425.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" minHeight="-Infinity" prefWidth="800.0" style="-fx-background-color: #ff8c00;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" minHeight="150.0" prefWidth="400.0" text="Almost done! Now we just need your permission to store some server data on your computer..." textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="141.0" prefWidth="425.0" style="-fx-background-color: #FDCB9B;">
+               <children>
+                  <Button fx:id="yesButton" mnemonicParsing="false" onAction="#yesButtonClicked" stylesheets="@Components.css" text="Sure!" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="120.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="noButton" mnemonicParsing="false" onAction="#noButtonClicked" stylesheets="@Components.css" text="No thanks" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

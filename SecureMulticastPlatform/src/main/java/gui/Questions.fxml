@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.QuestionsController">
+   <center>
+      <VBox alignment="TOP_CENTER" style="-fx-background-color: #FDCB9B;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" style="-fx-background-color: #ff8c00;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" text="Almost done," textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="usernameLabel" alignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" text="Just a few more questions!" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" text="These will be used to change your password" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="25.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="questionBox1" prefWidth="650.0" promptText="Question #1">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="answerField1" layoutX="52.0" layoutY="102.0" maxWidth="-Infinity" prefHeight="37.0" prefWidth="650.0" promptText="Your answer #1" style="-fx-background-radius: 7;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="questionBox2" prefWidth="650.0" promptText="Question #2">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="answerField2" maxWidth="-Infinity" prefHeight="37.0" prefWidth="650.0" promptText="Your answer #2" style="-fx-background-radius: 7;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="questionBox3" prefWidth="650.0" promptText="Question #3">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="answerField3" maxWidth="-Infinity" prefHeight="37.0" prefWidth="650.0" promptText="Your answer #3" style="-fx-background-radius: 7;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="finishButton" layoutX="151.0" layoutY="28.0" mnemonicParsing="false" onAction="#finishButtonClicked" prefHeight="51.0" prefWidth="444.0" stylesheets="@Components.css" text="Finish" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="informationLabel" textFill="#e40f0f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

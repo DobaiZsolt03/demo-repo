@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane prefHeight="642.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CreateForumController">
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="480.0" style="-fx-background-color: #FDCB9B;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" style="-fx-background-color: #ff8c00;">
+               <children>
+                  <Label alignment="CENTER" text="Create Your Own Forum" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <TextField fx:id="forumNameField" layoutX="52.0" layoutY="102.0" maxWidth="-Infinity" prefHeight="37.0" prefWidth="377.0" promptText="Name of the forum" style="-fx-background-radius: 7;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextField>
+            <TextArea fx:id="describeForumField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="87.0" prefWidth="376.0" promptText="Describe your forum!" style="-fx-background-radius: 7;" wrapText="true">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <CheckBox fx:id="agreeCheckBox" mnemonicParsing="false" prefHeight="105.0" prefWidth="393.0" text="By creating a new forum you acknowledge that you will become the moderator of your forum, and will have to handle any and all requests to join your forum!" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </CheckBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="createForumButton" layoutX="151.0" layoutY="28.0" mnemonicParsing="false" onAction="#createForumButtonClicked" stylesheets="@Components.css" text="Create Forum" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" right="50.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#goBackButtonClicked" stylesheets="@Components.css" text="Go Back" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="dragon" fitHeight="150.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../AppData/Local/Temp/twindragon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="WHelp" textFill="#e40f0f">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="informationLabel" textFill="#e40f0f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="45.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

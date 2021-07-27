@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="711.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.joinOrCreateForumController">
+   <center>
+      <VBox style="-fx-background-color: #FDCB9B;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" style="-fx-background-color: #43302e;">
+               <children>
+                  <Label alignment="CENTER" text="These Are The Currently Available Forums To Join.." textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="607.0" prefViewportHeight="595.0" prefViewportWidth="985.0" prefWidth="987.0">
+               <content>
+                  <VBox fx:id="middleVBOX" prefHeight="44.0" prefWidth="237.0" style="-fx-background-color: #FDCB9B;" />
+               </content>
+            </ScrollPane>
+            <VBox alignment="CENTER" prefHeight="23.0" prefWidth="985.0" style="-fx-background-color: #43302e;">
+               <children>
+                  <Label fx:id="informationLabel" alignment="CENTER" text="OR... Why Not Create A New Forum?" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="createForumButton" mnemonicParsing="false" onAction="#createForumButtonClicked" stylesheets="@Components.css" text="Create Forum" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#goBackButtonClicked" stylesheets="@Components.css" text="Go Back" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="40.0" right="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

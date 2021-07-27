@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefWidth="1467.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ForumController">
+   <left>
+      <VBox prefHeight="727.0" prefWidth="241.0" style="-fx-background-color: #43302e;" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="144.0" prefViewportHeight="128.0" prefViewportWidth="239.0" prefWidth="241.0" style="-fx-background-color: #FDCB9B;" vbarPolicy="NEVER">
+               <content>
+                  <VBox alignment="TOP_CENTER" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Label alignment="CENTER" text="Your Friends" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="testStuff" mnemonicParsing="false" onAction="#testStuffButtonClicked" stylesheets="@Components.css" text="Add Friend +" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="432.0" prefViewportHeight="550.0" prefViewportWidth="235.0" prefWidth="241.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox prefHeight="618.0" prefWidth="237.0" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Label alignment="CENTER" text="Invite some friends!" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="207.0" prefViewportHeight="206.0" prefViewportWidth="241.0" prefWidth="241.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox alignment="TOP_CENTER" prefHeight="205.0" prefWidth="239.0" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Label alignment="CENTER" text="Invites" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" text="No new friend invites!" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox style="-fx-background-color: #FDCB9B;" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="73.0" prefViewportWidth="987.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox alignment="CENTER" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Label alignment="CENTER" text="This is what people are asking..." textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="658.0" prefViewportHeight="595.0" prefViewportWidth="985.0" prefWidth="987.0" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="middleVBOX" prefHeight="44.0" prefWidth="237.0" style="-fx-background-color: #FDCB9B;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox style="-fx-background-color: #43302e;" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="129.0" prefViewportWidth="233.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox alignment="TOP_CENTER" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: #43302e;" text="Your Forums" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="joinForumButton" mnemonicParsing="false" onAction="#joinForumButtonClicked" stylesheets="@Components.css" text="Join Forum +" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="396.0" prefViewportHeight="550.0" prefViewportWidth="237.0" prefWidth="241.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox fx:id="forumsListVBOX" alignment="TOP_CENTER" prefHeight="618.0" prefWidth="237.0" style="-fx-background-color: #43302e;" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="206.0" prefViewportHeight="206.0" prefViewportWidth="239.0" prefWidth="241.0" style="-fx-background-color: #FDCB9B;">
+               <content>
+                  <VBox fx:id="invitesVBOX" alignment="TOP_CENTER" prefHeight="206.0" prefWidth="239.0" style="-fx-background-color: #43302e;">
+                     <children>
+                        <Label fx:id="InvitesLabel" alignment="CENTER" text="Invites" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="invitesDescriptionLabel" alignment="CENTER" text="No new forum invites!" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <HBox alignment="CENTER" style="-fx-background-color: linear-gradient(#FFBF00,#D3212D);" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" text="Welcome To WHelp!" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" text="See What's New!" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="400.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

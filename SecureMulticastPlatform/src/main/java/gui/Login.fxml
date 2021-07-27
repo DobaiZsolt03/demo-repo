@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LogInController">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="604.0" prefWidth="480.0" style="-fx-background-color: #FDCB9B;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" style="-fx-background-color: #ff8c00;">
+               <children>
+                  <Label alignment="CENTER" text="Log in to your account" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <TextField fx:id="usernameField" layoutX="52.0" layoutY="102.0" maxWidth="-Infinity" prefHeight="37.0" prefWidth="377.0" promptText="User name" style="-fx-background-radius: 7;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="passwordField" maxWidth="-Infinity" prefHeight="37.0" prefWidth="377.0" promptText="Password" style="-fx-background-radius: 7;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="forgotPasswordLabel" onMouseClicked="#forgotPasswordLabelClicked" prefHeight="21.0" prefWidth="372.0" text="Forgot password?" textFill="WHITE" underline="true">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="rememberCheckBox" mnemonicParsing="false" prefHeight="21.0" prefWidth="375.0" text="Remember my username" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </CheckBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonClicked" stylesheets="@Components.css" text="Log In" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="150.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="registerButton" layoutX="151.0" layoutY="28.0" mnemonicParsing="false" onAction="#registerButtonClicked" stylesheets="@Components.css" text="Register" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="dragon" fitHeight="150.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../AppData/Local/Temp/twindragon.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="WHelp" textFill="#e40f0f">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="informationLabel" textFill="#e40f0f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
